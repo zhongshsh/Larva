@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://www.ttlarval.org/github/02_learn_from_pr.html">
+        <link rel="canonical" href="https://www.ttlarval.org/master/github/03_SSH_for_github.html">
       
       <link rel="icon" href="../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.1.11">
     
     
       
-        <title>如何通过 PR 学习 - TTLarva</title>
+        <title>github SSH免密码登录设置 - TTLarva</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pr-vs-code" class="md-skip">
+        <a href="#github-ssh" class="md-skip">
           跳转至
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              如何通过 PR 学习
+              github SSH免密码登录设置
             
           </span>
         </div>
@@ -310,6 +310,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="02_learn_from_pr.html" class="md-nav__link">
+        如何通过 PR 学习
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -322,12 +334,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          如何通过 PR 学习
+          github SSH免密码登录设置
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="02_learn_from_pr.html" class="md-nav__link md-nav__link--active">
-        如何通过 PR 学习
+      <a href="03_SSH_for_github.html" class="md-nav__link md-nav__link--active">
+        github SSH免密码登录设置
       </a>
       
         
@@ -345,16 +357,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pr" class="md-nav__link">
-    如何通过 PR 学习
+  <a href="#ssh" class="md-nav__link">
+    什么是SSH
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vs" class="md-nav__link">
-    超好用的vs插件分享
+  <a href="#sshgithub" class="md-nav__link">
+    配置SSH连接github
   </a>
+  
+    <nav class="md-nav" aria-label="配置SSH连接github">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    本地生成密钥对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    将公钥添加到github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    测试使用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -362,18 +401,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="03_SSH_for_github.html" class="md-nav__link">
-        github SSH免密码登录设置
-      </a>
     </li>
   
 
@@ -572,16 +599,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pr" class="md-nav__link">
-    如何通过 PR 学习
+  <a href="#ssh" class="md-nav__link">
+    什么是SSH
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vs" class="md-nav__link">
-    超好用的vs插件分享
+  <a href="#sshgithub" class="md-nav__link">
+    配置SSH连接github
   </a>
+  
+    <nav class="md-nav" aria-label="配置SSH连接github">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    本地生成密钥对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    将公钥添加到github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    测试使用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -597,36 +651,59 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ttttLarva/Larva/blob/master/docs/github/02_learn_from_pr.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/ttttLarva/Larva/blob/master/docs/github/03_SSH_for_github.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="pr-vs-code">如何通过 PR 学习 &amp; VS Code好用插件分享<a class="headerlink" href="#pr-vs-code" title="Permanent link">&para;</a></h1>
-<p><img alt="🌏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f30f.svg" title=":earth_asia:" /> <strong>Bilibili视频传送门：</strong><a href="https://www.bilibili.com/video/BV19f4y1j78T?share_source=copy_web">通过PR学习&amp;VS Code插件分享</a> <img alt="🌏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f30f.svg" title=":earth_asia:" /></p>
-<h2 id="pr">如何通过 PR 学习<a class="headerlink" href="#pr" title="Permanent link">&para;</a></h2>
-<p>今天给大家分享的是如何在github上通过搜索PR(pull requests)进行自我能力的拓展。
-首先就要学会读PR，接下来我将以深度学习框架<code>OneFlow</code>的PR为例子，来说明PR的各个字段，并怎么通过PR学习。</p>
-<p><img src="image/1633607600397.png" alt="PR页面" style="zoom:30%;" align="left" /></p>
-<p>PR分为两类：</p>
+                <h1 id="github-ssh">github SSH免密码登录<a class="headerlink" href="#github-ssh" title="Permanent link">&para;</a></h1>
+<p><img alt="🌏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f30f.svg" title=":earth_asia:" /> <strong>Bilibili视频传送门：</strong><a href="https://www.bilibili.com/video/BV1NL411x7z9?share_source=copy_web">github SSH免密码登录</a> <img alt="🌏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f30f.svg" title=":earth_asia:" /></p>
+<h2 id="ssh">什么是SSH<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h2>
+<p><img alt="SSH" src="image/1633607611414.png" /></p>
+<p>如上图，在github仓库的Code栏，可以查看到SSH标签。</p>
+<p>SSH是一种常见的登录协议，使用SSH的好处是不用在下载或者上传代码时，每次都输入账号密码。</p>
+<h2 id="sshgithub">配置SSH连接github<a class="headerlink" href="#sshgithub" title="Permanent link">&para;</a></h2>
+<p>具体可参考https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh</p>
+<p>具体步骤如下：</p>
 <ul>
-<li>Open：正在合并，还在评审的PR</li>
-<li>Clode：已经合并，或者放弃合并的PR</li>
+<li>
+<p>本地生成密钥对</p>
+</li>
+<li>
+<p>将公钥添加到github</p>
+</li>
+<li>
+<p>测试使用</p>
+</li>
 </ul>
-<p>PR标题边的彩色标签，是对这个PR的简单分类。</p>
-<p>github还自带了多种搜索功能，比如可以筛选某个感兴趣的作者提交的PR</p>
-<p><strong>那么具体如何通过PR进行学习呢？</strong></p>
-<p>进入PR详情界面</p>
-<p><img src="image/1633607603294.png" alt="PR详情" style="zoom:20%;" /></p>
+<h3 id="_1">本地生成密钥对<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>win+R打开控制台，使用命令：</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen -t rsa -b 4096 -C &quot;最好为github的账号&quot;
+</code></pre></div>
+<p>后面一路直接回车</p>
+<p>接着就在（用户/.ssh）目录下生成了两个文件</p>
 <ul>
-<li>Conversation：这一栏的主贴，一般会描述这个PR改动的原因、功能然后reviewer会评审该PR。reviewer合PR作者会在这里展开对话讨论</li>
-<li>Files Changed：包含了该PR的改动项，红色是PR作者删除的内容，绿色是新增的内容</li>
+<li>id_rsa是私钥文件</li>
+<li>id_rsa.pub是公钥文件</li>
 </ul>
-<h2 id="vs">超好用的vs插件分享<a class="headerlink" href="#vs" title="Permanent link">&para;</a></h2>
-<p>如果要每次都点开github仓库，再对PR进行学习，可能不是很便捷；因此推荐一个vscode插件，可以在本地仓库就让我们查看到PR。</p>
-<p>强烈推荐：<strong>Git History Diff</strong> 插件</p>
-<p><img src="image/1633607608470.png" alt="vscode插件" style="zoom:33%;" /></p>
-<p>具体有多好用呢？去看看视频后，大家快快动手下载下来试试吧~</p>
+<h3 id="github">将公钥添加到github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<p>打开github，点击个人页面的头像，点击<code>Settings</code></p>
+<p><img src="image/1633607614312.png" alt="image-20210929181234279" style="zoom:33%;" /></p>
+<p>点击 <code>SSH and GPG keys</code></p>
+<p><img src="image/1633607617619.png" alt="image-20210929181317739" style="zoom:33%;" /></p>
+<p>点击<code>New SSH Key</code></p>
+<p><img alt="image-20210929181809788" src="image/1633607620538.png" /></p>
+<p>打开第二步在本地生成的<code>id_rsa.pub</code>文件，将里面的所有内容复制到如下对话框。</p>
+<p><img src="image/1633607620538.png" alt="image-20210929181851208" style="zoom:33%;" /></p>
+<p>最终点击<code>Add SSH Key</code>按钮 就能成功添加啦</p>
+<h3 id="_2">测试使用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>接着使用命令：</p>
+<div class="highlight"><pre><span></span><code>ssh -T git@github.com
+</code></pre></div>
+<p>检验是否配置成功</p>
+<blockquote>
+<p>注意：第一次连接，会有提示是否信任github服务器，我们需要输入yes</p>
+</blockquote>
                 
               
               
@@ -651,7 +728,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="01_how_to_pr.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 如何提交 PR" rel="prev">
+        <a href="02_learn_from_pr.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 如何通过 PR 学习" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -660,20 +737,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              如何提交 PR
+              如何通过 PR 学习
             </div>
           </div>
         </a>
       
       
         
-        <a href="03_SSH_for_github.html" class="md-footer__link md-footer__link--next" aria-label="下一页: github SSH免密码登录设置" rel="next">
+        <a href="04_beauty_code.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 美化代码工具分享" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              github SSH免密码登录设置
+              美化代码工具分享
             </div>
           </div>
           <div class="md-footer__button md-icon">

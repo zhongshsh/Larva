@@ -11,7 +11,7 @@
       
       
       
-        <link rel="canonical" href="https://www.ttlarval.org/github/08_GitHub_Actions.html">
+        <link rel="canonical" href="https://www.ttlarval.org/master/github/08_GitHub_Actions.html">
       
       <link rel="icon" href="../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.1.11">
@@ -664,42 +664,42 @@
 <p>我们选择最简单的 simple workflow。</p>
 <p><img src="image/choose_simple_workflow.png" alt="choose_simple_workflow" style="zoom:50%;" /></p>
 <p>打开之后发现一个 yaml 文件，这个 yaml 文件就描述了一个工作流，yaml 文件的内容如下。</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># This is a basic workflow to help you get started with Actions</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># This is a basic workflow to help you get started with Actions</span><span class="w"></span>
 
-<span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">publish site</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">publish site</span><span class="w"></span>
 
-<span class="c1"># Controls when the workflow will run</span>
-<span class="nt">on</span><span class="p">:</span>
-  <span class="c1"># Triggers the workflow on push or pull request events but only for the main branch</span>
-  <span class="nt">push</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span> <span class="p p-Indicator">[</span> <span class="nv">main</span> <span class="p p-Indicator">]</span>
-  <span class="nt">pull_request</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span> <span class="p p-Indicator">[</span> <span class="nv">main</span> <span class="p p-Indicator">]</span>
+<span class="c1"># Controls when the workflow will run</span><span class="w"></span>
+<span class="nt">on</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Triggers the workflow on push or pull request events but only for the main branch</span><span class="w"></span>
+<span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">main</span><span class="w"> </span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">main</span><span class="w"> </span><span class="p p-Indicator">]</span><span class="w"></span>
 
-  <span class="c1"># Allows you to run this workflow manually from the Actions tab</span>
-  <span class="nt">workflow_dispatch</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Allows you to run this workflow manually from the Actions tab</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span><span class="w"></span>
 
-<span class="c1"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span>
-<span class="nt">jobs</span><span class="p">:</span>
-  <span class="c1"># This workflow contains a single job called &quot;build&quot;</span>
-  <span class="nt">build</span><span class="p">:</span>
-    <span class="c1"># The type of runner that the job will run on</span>
-    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="c1"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span><span class="w"></span>
+<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># This workflow contains a single job called &quot;build&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># The type of runner that the job will run on</span><span class="w"></span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
 
-    <span class="c1"># Steps represent a sequence of tasks that will be executed as part of the job</span>
-    <span class="nt">steps</span><span class="p">:</span>
-      <span class="c1"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span>
-      <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<span class="w">    </span><span class="c1"># Steps represent a sequence of tasks that will be executed as part of the job</span><span class="w"></span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
 
-      <span class="c1"># Runs a single command using the runners shell</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Run a one-line script</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">echo Hello, world!</span>
+<span class="w">      </span><span class="c1"># Runs a single command using the runners shell</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run a one-line script</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo Hello, world!</span><span class="w"></span>
 
-      <span class="c1"># Runs a set of commands using the runners shell</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Run a multi-line script</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-          <span class="no">echo Add other actions to build,</span>
-          <span class="no">echo test, and deploy your project.</span>
+<span class="w">      </span><span class="c1"># Runs a set of commands using the runners shell</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run a multi-line script</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">          </span><span class="no">echo Add other actions to build,</span><span class="w"></span>
+<span class="w">          </span><span class="no">echo test, and deploy your project.</span><span class="w"></span>
 </code></pre></div>
 <p>这个 yaml 文件就描述了一个工作流，接下来我们结合代码简单地来讲解一下。</p>
 <p>第 3 行中的 <code>name</code> 是给工作流起的名字，这个名字可以随便修改，改成我们想要的就可以了。</p>
@@ -711,48 +711,48 @@
 <h2 id="_1">自动发布的博客仓库<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>到这里，相信大家已经对 GitHub Actions 有了一定的了解，接下来我们就可以用前面讲的知识，做一个博客网站了。我们这个博客网站，只要它对应的仓库有主分支的代码合并，那么它将会被自动编译成 HTML 文件，并且自动推送到 GitHub Pages 上去。</p>
 <p>接下来我们来看看为了实现以上功能，yaml 文件要怎么编写呢？</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># This is a basic workflow to help you get started with Actions</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># This is a basic workflow to help you get started with Actions</span><span class="w"></span>
 
-<span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">publish site</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">publish site</span><span class="w"></span>
 
-<span class="c1"># Controls when the workflow will run</span>
-<span class="nt">on</span><span class="p">:</span>
-  <span class="c1"># Triggers the workflow on push or pull request events but only for the main branch</span>
-  <span class="nt">push</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span> <span class="p p-Indicator">[</span> <span class="nv">main</span> <span class="p p-Indicator">]</span>
-  <span class="nt">pull_request</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span> <span class="p p-Indicator">[</span> <span class="nv">main</span> <span class="p p-Indicator">]</span>
+<span class="c1"># Controls when the workflow will run</span><span class="w"></span>
+<span class="nt">on</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Triggers the workflow on push or pull request events but only for the main branch</span><span class="w"></span>
+<span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">main</span><span class="w"> </span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">main</span><span class="w"> </span><span class="p p-Indicator">]</span><span class="w"></span>
 
-  <span class="c1"># Allows you to run this workflow manually from the Actions tab</span>
-  <span class="nt">workflow_dispatch</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Allows you to run this workflow manually from the Actions tab</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span><span class="w"></span>
 
-<span class="c1"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span>
-<span class="nt">jobs</span><span class="p">:</span>
-  <span class="c1"># This workflow contains a single job called &quot;build&quot;</span>
-  <span class="nt">build</span><span class="p">:</span>
-    <span class="c1"># The type of runner that the job will run on</span>
-    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="c1"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span><span class="w"></span>
+<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># This workflow contains a single job called &quot;build&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># The type of runner that the job will run on</span><span class="w"></span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
 
-    <span class="c1"># Steps represent a sequence of tasks that will be executed as part of the job</span>
-    <span class="nt">steps</span><span class="p">:</span>
-      <span class="c1"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span>
-      <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<span class="w">    </span><span class="c1"># Steps represent a sequence of tasks that will be executed as part of the job</span><span class="w"></span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
 
-      <span class="c1">#安装mkdocs</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install mkdocs</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python -m pip install mkdocs</span>
+<span class="w">      </span><span class="c1">#安装mkdocs</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install mkdocs</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python -m pip install mkdocs</span><span class="w"></span>
 
 
-      <span class="c1">#生成html</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">build html</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs build</span>
+<span class="w">      </span><span class="c1">#生成html</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">build html</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs build</span><span class="w"></span>
 
-      <span class="c1"># 发布到指定目录</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Deploy</span>
-        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">peaceiris/actions-gh-pages@v3</span>
-        <span class="nt">with</span><span class="p">:</span>
-          <span class="nt">github_token</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span>
-          <span class="nt">publish_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">./site</span>
+<span class="w">      </span><span class="c1"># 发布到指定目录</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy</span><span class="w"></span>
+<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peaceiris/actions-gh-pages@v3</span><span class="w"></span>
+<span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">github_token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span><span class="w"></span>
+<span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./site</span><span class="w"></span>
 </code></pre></div>
 <p>从第 28 行开始，我们安装 MkDocs 工具；从第 33 行开始，我们利用 MkDocs 工具来生成 HTML 文件；从第 37 行开始，我们 use 了别人写好的 Action 将我们的网站发布出去，我们指定发布的目录是 MkDocs 编译输出的 site 就可以了。</p>
 <p>我们对主分支中的内容做些许改动，然后我们提交这个分支，再 push 到远程分支，接下来我们来查看一下 <a href="https://github.com/ttttLarva/MyBlog/actions">Actions</a> 中的 <a href="https://github.com/ttttLarva/MyBlog/actions/runs/1645865463">update about</a>，可以看到果然有安装、编译和发布了。</p>

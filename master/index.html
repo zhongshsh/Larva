@@ -1,3 +1,5 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
 
 <!doctype html>
 <html lang="zh" class="no-js">
@@ -11,19 +13,21 @@
       
       
       
-      <link rel="icon" href="/assets/favicon.png">
+        <link rel="canonical" href="https://www.ttlarval.org/master/index.html">
+      
+      <link rel="icon" href="assets/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.1.11">
     
     
       
-        <title>TTLarva</title>
+        <title>糖果屋 -- 深度学习、C++、嵌入式 - TTLarva</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.3754935a.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.3754935a.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -59,7 +63,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
   
     
-    <script>function __prefix(e){return new URL("/",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,9 +77,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/index.html" title="TTLarva" class="md-header__button md-logo" aria-label="TTLarva" data-md-component="logo">
+    <a href="index.html" title="TTLarva" class="md-header__button md-logo" aria-label="TTLarva" data-md-component="logo">
       
-  <img src="/assets/logo.svg" alt="logo">
+  <img src="assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -91,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              糖果屋 -- 深度学习、C++、嵌入式
             
           </span>
         </div>
@@ -151,6 +155,7 @@
     <div class="md-container" data-md-component="container">
       
       
+
         
           
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
@@ -160,10 +165,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="/index.html" class="md-tabs__link">
+    <a href="index.html" class="md-tabs__link md-tabs__link--active">
       首页
     </a>
   </li>
@@ -178,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/github/01_how_to_pr.html" class="md-tabs__link">
+      <a href="github/01_how_to_pr.html" class="md-tabs__link">
         一起学GitHub
       </a>
     </li>
@@ -194,7 +201,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/learn_cpp/01_rvalue_ref.html" class="md-tabs__link">
+      <a href="learn_cpp/01_rvalue_ref.html" class="md-tabs__link">
         研究 C++ 新语法
       </a>
     </li>
@@ -206,6 +213,241 @@
 </nav>
         
       
+<style>
+@-webkit-keyframes mdx-heart {
+    0%,40%,80%,to {
+        transform: scale(1)
+    }
+
+    20%,60% {
+        transform: scale(1.15)
+    }
+}
+
+@keyframes mdx-heart {
+    0%,40%,80%,to {
+        transform: scale(1)
+    }
+
+    20%,60% {
+        transform: scale(1.15)
+    }
+}
+
+.mdx-hero {
+    color: var(--md-primary-bg-color);
+    margin: 0 .8rem
+}
+
+.mdx-hero h1 {
+    color: currentColor;
+    font-weight: 700;
+    margin-bottom: 1rem
+}
+
+@media screen and (max-width: 29.9375em) {
+    .mdx-hero h1 {
+        font-size:1.4rem
+    }
+}
+
+.mdx-hero__content {
+    padding-bottom: 10rem
+}
+
+@media screen and (min-width: 60em) {
+    .mdx-hero {
+        align-items:stretch;
+        display: flex
+    }
+
+    .mdx-hero__content {
+        margin-top: 3.5rem;
+        max-width: 19rem;
+        /* padding-bottom: 14vw */
+    }
+
+    .mdx-hero__image {
+        order: 1;
+        transform: translateX(4rem);
+        width: 40rem;
+        height: 20rem
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    .mdx-hero__image {
+        transform:translateX(10rem)
+    }
+}
+
+.mdx-hero .md-button {
+    color: var(--md-primary-bg-color);
+    margin-right: .5rem;
+    margin-top: .5rem
+}
+
+.mdx-hero .md-button:focus,.mdx-hero .md-button:hover {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color)
+}
+
+.mdx-hero .md-button--primary {
+    background-color: var(--md-primary-bg-color);
+    border-color: var(--md-primary-bg-color);
+    color: #02a6f2
+}
+
+.bilibili:hover path{
+    fill:#3dc2ff;
+}
+    .tx-container {
+        padding-top: .0rem;
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='m1125,30c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166l-81,-1z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,linear-gradient(to bottom,var(--md-primary-fg-color),#add7ff 100%,var(--md-default-bg-color) 99%);
+        /*background: linear-gradient(to bottom, var(--md-primary-fg-color), #add7ff 100%,#02a6f2 99%)*/
+    }
+
+    .feature-item h2 svg {
+        height: 30px;
+        float: left;
+        margin-right: 10px;
+        transform: translateY(10%);
+    }
+
+    .top-hr {
+        margin-top: 42px;
+    }
+
+    .feature-item {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 0 15px;
+        word-break: break-word
+    }
+
+    .feature-item h2 {
+        color: #333;
+        font-weight: 300;
+        font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: inherit;
+    }
+
+    .feature-item p {
+        font-size: 16px;
+        line-height: 1.8em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: #111;
+        margin: 0 0 10px;
+        display: block;
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+
+        .top-hr {
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .bottom-hr {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .feature-item:hover {
+            background-color: #add7ff;
+            border-radius: 3px;
+        }
+    }
+
+    .hr {
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .md-footer-meta__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1.0rem;
+    }
+
+    .md-footer-social {
+        padding-top: 20px;
+    }
+</style>
+
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+
+          <!-- Hero image -->
+          <div class="mdx-hero__image">
+            <img
+              src="assets/item.png"
+              alt=""
+              width="550"
+              draggable="false"
+            >
+          </div>
+
+          <!-- Hero content -->
+          <div class="mdx-hero__content">
+            <h1>糖果屋</h1>
+            <p>糖糖喜欢的技术笔记：深度学习、C++、嵌入式。</p>
+            <a href="github/01_how_to_pr.html" title="如何提交 PR" class="md-button md-button--primary">
+                一起学习
+              </a>
+              <a href="https://github.com/ttttLarva/Larva" title="前往 GitHub 仓库" class="md-button">
+                GitHub 仓库
+              </a>
+          </div>
+        </div>
+      </div>
+
+</section>
+
+<!-- Main site box descriptions -->
+<div class="top-hr">
+
+</div>
+
+<div class="md-footer-meta__inner md-grid">
+    <div class="md-footer-social">
+    <a class="" href="https://space.bilibili.com/155774183/dynamic" rel="noopener" target="_blank" title="Bilibili">
+        <svg t="1631347615879" class="bilibili" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1285" width="128" height="128"><path d="M711.7824 385.706667H317.860978c-11.963733 0-22.038756 9.12384-22.038756 21.379982v261.158684c0 12.255004 10.073884 21.251413 22.038756 21.251414h393.921422c11.964871 0 20.946489-8.995271 20.946489-21.251414V407.086649c0-12.25728-8.983893-21.379982-20.946489-21.379982z m-367.101724 96.493795l111.015253-21.255964 8.388835 41.665422-109.899093 21.253689-9.504995-41.663147z m171.137706 126.95552c-34.116267 37.19168-69.907342-11.744142-69.907342-11.744142l18.176-11.744142s24.327964 43.902293 51.453724-14.262045c26.006187 56.486116 54.809031 14.821831 54.809032 15.099449l16.500053 10.62912c-0.002276-0.003413-30.762098 49.212302-71.031467 12.02176z m164.706987-85.291235l-110.176711-21.251414 8.669866-41.66656 110.73536 21.255965-9.228515 41.662009z" p-id="1286" fill="#02a6f2"></path><path d="M512 115.456c-219.005156 0-396.544 177.539982-396.544 396.542862 0 219.005156 177.539982 396.545138 396.544 396.545138S908.544 731.004018 908.544 512c0-219.005156-177.538844-396.544-396.544-396.544z m208.828871 626.904178c-27.71968-0.877227-37.05856 0-37.05856 0s-2.042311 31.806578-29.177173 32.38912c-27.428409 0.291271-31.514169-22.177564-32.391396-30.63808-16.630898 0-216.512284 0.873813-216.512284 0.873813s-3.500942 29.47072-30.63808 29.47072c-27.428409 0-28.889316-24.511147-30.63808-29.47072-17.801671 0-41.729138-0.584818-41.729138-0.584818s-60.109938-12.541724-67.987911-90.744604c0.874951-78.201742 0-232.8576 0-232.8576s-5.544391-72.071396 66.239147-92.790329c22.173013-0.873813 70.03136-1.16736 125.471857-1.16736l-51.065742-49.605973s-7.877973-9.921422 5.544391-21.009067c13.717049-11.086507 14.296178-6.568391 18.966756-3.35872 4.66944 3.208533 76.160569 73.672249 76.160569 73.672249h-9.629014c27.427271 0 55.732907 0.444871 82.868907 0.444871 10.502827-10.505102 70.322631-69.082453 74.407253-71.99744 4.668302-2.9184 5.542116-7.841564 18.967894 3.244942 13.422364 11.087644 5.543253 21.028409 5.543253 21.028409l-49.898382 48.155307c68.572729 0.584818 121.387236 0.878364 121.387235 0.878364s67.694364 14.885547 69.446543 92.500196c-0.874951 77.6192 0.291271 233.732551 0.291271 233.732551s-3.7888 75.867022-68.569316 87.834169z" p-id="1287" fill="#02a6f2"></path></svg>
+    </a>
+    </div>
+</div>
+
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -221,9 +463,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/index.html" title="TTLarva" class="md-nav__button md-logo" aria-label="TTLarva" data-md-component="logo">
+    <a href="index.html" title="TTLarva" class="md-nav__button md-logo" aria-label="TTLarva" data-md-component="logo">
       
-  <img src="/assets/logo.svg" alt="logo">
+  <img src="assets/logo.svg" alt="logo">
 
     </a>
     TTLarva
@@ -251,11 +493,19 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/index.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
         首页
       </a>
+      
     </li>
   
 
@@ -289,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/01_how_to_pr.html" class="md-nav__link">
+      <a href="github/01_how_to_pr.html" class="md-nav__link">
         如何提交 PR
       </a>
     </li>
@@ -301,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/02_learn_from_pr.html" class="md-nav__link">
+      <a href="github/02_learn_from_pr.html" class="md-nav__link">
         如何通过 PR 学习
       </a>
     </li>
@@ -313,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/03_SSH_for_github.html" class="md-nav__link">
+      <a href="github/03_SSH_for_github.html" class="md-nav__link">
         github SSH免密码登录设置
       </a>
     </li>
@@ -325,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/04_beauty_code.html" class="md-nav__link">
+      <a href="github/04_beauty_code.html" class="md-nav__link">
         美化代码工具分享
       </a>
     </li>
@@ -337,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/05_get_started_with_Markdown.html" class="md-nav__link">
+      <a href="github/05_get_started_with_Markdown.html" class="md-nav__link">
         快速上手 Markdown
       </a>
     </li>
@@ -349,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/06_Mkdocs.html" class="md-nav__link">
+      <a href="github/06_Mkdocs.html" class="md-nav__link">
         MkDocs 工具使用
       </a>
     </li>
@@ -361,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/07_GitHub_Pages.html" class="md-nav__link">
+      <a href="github/07_GitHub_Pages.html" class="md-nav__link">
         GitHub Pages 的生成和使用
       </a>
     </li>
@@ -373,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/github/08_GitHub_Actions.html" class="md-nav__link">
+      <a href="github/08_GitHub_Actions.html" class="md-nav__link">
         GitHub Actions 介绍 & 使用
       </a>
     </li>
@@ -415,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_cpp/01_rvalue_ref.html" class="md-nav__link">
+      <a href="learn_cpp/01_rvalue_ref.html" class="md-nav__link">
         右值引用
       </a>
     </li>
@@ -427,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_cpp/02_forward.html" class="md-nav__link">
+      <a href="learn_cpp/02_forward.html" class="md-nav__link">
         完美转发
       </a>
     </li>
@@ -439,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_cpp/03_varadic_template.html" class="md-nav__link">
+      <a href="learn_cpp/03_varadic_template.html" class="md-nav__link">
         可变参模板
       </a>
     </li>
@@ -451,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_cpp/04_singleton.html" class="md-nav__link">
+      <a href="learn_cpp/04_singleton.html" class="md-nav__link">
         单例模式
       </a>
     </li>
@@ -463,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_cpp/05_using_against_typedef.html" class="md-nav__link">
+      <a href="learn_cpp/05_using_against_typedef.html" class="md-nav__link">
         类型别名：从 typedef 到 using
       </a>
     </li>
@@ -475,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_cpp/06_functor.html" class="md-nav__link">
+      <a href="learn_cpp/06_functor.html" class="md-nav__link">
         仿函数
       </a>
     </li>
@@ -499,7 +749,9 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+              
+                
+
 
               
             </article>
@@ -513,38 +765,16 @@
         
       </main>
       
-        
-<footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; All Reserved
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
-      
-    </div>
-  </div>
-</footer>
-      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "/assets/javascripts/workers/search.477d984a.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      <script src="assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
-        <script src="/javascripts/config.js"></script>
+        <script src="javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
